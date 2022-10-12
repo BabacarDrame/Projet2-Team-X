@@ -1,0 +1,17 @@
+<!-- <button (click)="getUser();">Afficher les users</button> -->
+<h1 style="color:brown ; text-align: center;">Users</h1>
+<div style="text-align:center ;" *ngFor="let user of user$ |async">
+    <!-- {{user | json }} -->
+    <p >
+      <span>Prenom: {{user.firstname}}</span><br>
+      <span>Nom: {{user.lastname }}</span><br>
+      <span>Address: {{user.address }}</span>
+      {{user.id }}
+      
+
+      
+    </p>
+</div>
+<!-- <p>users works! {{user$|json}}</p> -->
+
+

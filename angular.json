@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,7 +64,8 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Angular:build:production"
+              "browserTarget": "Angular:build:production",
+              "proxyConfig":"src/proxy.conf.json"
             },
             "development": {
               "browserTarget": "Angular:build:development"
@@ -97,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "5d31dc02-5047-4570-b63c-fd80fa1b3852"
   }
 }

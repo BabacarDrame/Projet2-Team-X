@@ -1,0 +1,12 @@
+button a {
+    text-decoration: none;
+}
+button{
+ margin: 20px;
+ padding: 3px;
+ width: 70px;
+ box-shadow: 1px 1px;
+}
+h1{
+    color: dodgerblue;
+}
